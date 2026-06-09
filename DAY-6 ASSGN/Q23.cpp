@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int setbit(int n){
+    int res=0;
+    while(n!=0){
+        if (n&1){
+            res+=1;
+        }
+        n>>1;
+    }
+    return res;
+
+
+}
+int main(){
+    int a;
+    cin>>a;
+    cout<<setbit(a);
+}
